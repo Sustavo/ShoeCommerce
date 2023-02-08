@@ -163,6 +163,7 @@ body main {
   border-radius: 16px;
   margin-bottom: 23px;
   background: rgba(211, 211, 211, 0.6);
+  cursor: pointer;
 }
 .shoes-list li .img-shoes img {
   width: 134px;
@@ -172,6 +173,7 @@ body main {
   font-size: 10px;
   color: #000;
   padding: 0 0 0 20px;
+  cursor: pointer;
 }
 .shoes-list li p:first-of-type {
   font-weight: 500;
