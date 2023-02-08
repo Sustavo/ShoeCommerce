@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -54,21 +54,34 @@ body {
   align-items: center;
   justify-content: center;
 }
+body header {
+  width: 100%;
+}
+body main {
+  margin-top: 17px;
+}
 
 .cellphone {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 390px;
   height: 884px;
+  width: 390px;
   background: #FFFFFF;
-  border-radius: 40px;
+}
+.cellphone span {
+  width: 90%;
+  height: 1px;
+  margin: 25px 0 7.5px 0;
+  background: #AFADAD;
 }
 
 .perfil {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  padding: 68px 42px 10px 62px;
 }
 .perfil h2 {
   font-size: 14px;
@@ -82,6 +95,99 @@ body {
   width: 35px;
   height: 35px;
   border-radius: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.search input {
+  width: 243px;
+  height: 45px;
+  border: 1.5px solid #D9D9D9;
+  border-radius: 4px;
+}
+.search .button_search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 45px;
+  height: 40px;
+  background: #000;
+  border-radius: 8px;
+}
+.search .button_search img {
+  width: 25px;
+  height: 25px;
+}
+
+.choose_brand ul {
+  display: flex;
+  gap: 25px;
+}
+.choose_brand button {
+  padding: 10px 5px;
+  height: 32px;
+  min-width: 55px;
+  border: 1px solid #D9D9D9;
+  border-radius: 12px 13px;
+  background: none;
+  color: #AFADAD;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.shoes-list {
+  margin-top: 17px;
+}
+.shoes-list ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.shoes-list li p {
+  font-size: 10px;
+  color: #000;
+}
+.shoes-list li p:first-of-type {
+  font-weight: 500;
+}
+.shoes-list li p:last-of-type {
+  font-weight: 700;
+}
+.shoes-list li .img-shoes {
+  width: 142px;
+  height: 184px;
+  border-radius: 16px;
+  background: rgba(211, 211, 211, 0.6);
+}
+.shoes-list li .img-shoes img {
+  width: 134px;
+}
+
+footer ul {
+  display: flex;
+  gap: 48px;
+}
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+footer ul li img {
+  width: 25px;
+  height: 25px;
+}
+footer ul li p {
+  font-size: 10px;
+  color: #999999;
 }
 
 /*# sourceMappingURL=style.css.map */
