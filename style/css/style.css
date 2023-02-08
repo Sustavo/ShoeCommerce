@@ -71,9 +71,11 @@ body main {
   border-radius: 40px;
 }
 .cellphone span {
-  width: 90%;
+  width: 95%;
   height: 1px;
   margin: 25px 0 7.5px 0;
+  position: relative;
+  right: 10px;
   background: #AFADAD;
 }
 
