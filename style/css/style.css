@@ -68,6 +68,7 @@ body main {
   height: 884px;
   width: 390px;
   background: #FFFFFF;
+  border-radius: 40px;
 }
 .cellphone span {
   width: 90%;
@@ -150,24 +151,32 @@ body main {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
 }
-.shoes-list li p {
-  font-size: 10px;
-  color: #000;
-}
-.shoes-list li p:first-of-type {
-  font-weight: 500;
-}
-.shoes-list li p:last-of-type {
-  font-weight: 700;
+.shoes-list li {
+  display: flex;
+  flex-direction: column;
 }
 .shoes-list li .img-shoes {
   width: 142px;
   height: 184px;
   border-radius: 16px;
+  margin-bottom: 23px;
   background: rgba(211, 211, 211, 0.6);
 }
 .shoes-list li .img-shoes img {
   width: 134px;
+  margin: 72px 0 0 4px;
+}
+.shoes-list li p {
+  font-size: 10px;
+  color: #000;
+  padding: 0 0 0 20px;
+}
+.shoes-list li p:first-of-type {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.shoes-list li p:last-of-type {
+  font-weight: 700;
 }
 
 footer ul {
